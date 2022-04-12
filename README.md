@@ -48,7 +48,7 @@ ffhq
 
 ### FFHQ
 
-To train a new model of **EmbedStyleSwin-FFHQ-512** from scratch:
+To train a new model of **BFRFormer-FFHQ-512** from scratch:
 
 ```bash
 python -m torch.distributed.launch --nproc_per_node=8 train_styleswin.py --batch 2 --path /path_to_ffhq_1024 --checkpoint_path /tmp --sample_path /tmp --size 1024 --D_lr 0.0002 --D_sn --ttur --eval_gt_path /path_to_ffhq_real_images_50k --lr_decay --lr_decay_start_steps 600000
@@ -57,23 +57,23 @@ or
 ```bash
 bash run.sh
 ```
-**Notice**: When training on A100(40GB) GPUs, you could add `--use_checkpoint` to save GPU memory. 
+**Notice**: we training on A100(40GB) GPUs, you could add `--use_checkpoint` to save GPU memory. 
 Besides, we evaluate the LPIPS score every 10000 steps during training.
 
 ## Qualitative Results
 
-Image samples Restoration of --xx-dataset--  by EmbedStyleSwin:
+Image samples Restoration of --xx-dataset--  by BFRFormer:
 
 (traing progress not finish yet)
 ![](imgs/160600.png)
 
 
-## Citing EmbedStyleSwin
+## Citing BFRFormer
 
 ```
-@misc{EmbedStyleSwin,
+@misc{BFRFormer,
       title={BFRFormer: Adversarial Consistency Transformer for Blind Face Restoration}, 
-      author={-----},
+      author={Anonymous Author(s)},
       year={2022},
       eprint={0.0},
       archivePrefix={arXiv},
@@ -81,9 +81,6 @@ Image samples Restoration of --xx-dataset--  by EmbedStyleSwin:
 }
 ```
 
-## Responsible AI Considerations
-
-Our work 
 
 ## Acknowledgements
 
