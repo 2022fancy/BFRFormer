@@ -78,7 +78,7 @@ Image samples Restoration of --xx-dataset--  by EmbedStyleSwin:
 
 ```
 @misc{EmbedStyleSwin,
-      title={EmbedStyleSwin: Embed Transformer-based GAN for Blind Face Restoration}, 
+      title={BFRFormer: Adversarial Consistency Transformer for Blind Face Restoration}, 
       author={-----},
       year={2022},
       eprint={0.0},
