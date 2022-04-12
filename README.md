@@ -25,12 +25,12 @@ To install the dependencies:
 python -m pip install -r requirements.txt
 ```
 
-## Eval FID && LPIPS &&PSNR
+## Eval
 
 To evaluate the score:
-with default config batch_size 1024 data_worker 8 
+
 ```bash
-python inference.py --path1 PATH_TO_GT --path2 PATH_TO_Restoration
+python inference.py --path1 PATH_TO_GT --path2 PATH_TO_Restoration --batch_size 1024 --worker 8
 ```
 
 ## Training
