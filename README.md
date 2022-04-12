@@ -64,7 +64,6 @@ Besides, we evaluate the LPIPS score every 10000 steps during training.
 
 Image samples Restoration of --xx-dataset--  by BFRFormer:
 
-(traing progress not finish yet)
 ![](imgs/160600.png)
 
 
