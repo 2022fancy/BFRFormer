@@ -4,7 +4,7 @@
 
 This repo is the official implementation of BFRFormer: Adversarial Consistency Transformer for Blind Face Restoration
 
-By Anonymous Author(s)
+By **Anonymous Author(s)**
 
 ## Abstract
 
