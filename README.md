@@ -25,18 +25,12 @@ To install the dependencies:
 python -m pip install -r requirements.txt
 ```
 
-## Eval FID && LPIPS
+## Eval FID && LPIPS &&PSNR
 
-To evaluate the fid score:
-
+To evaluate the score:
+with default config batch_size 1024 data_worker 8 
 ```bash
-python -m torch.distributed.launch --nproc_per_node=1
-```
-
-To evaluate the LPIPS score
-
-```bash
-python -m torch.distributed.launch --nproc_per_node=1 
+python inference.py --path1 PATH_TO_GT --path2 PATH_TO_Restoration
 ```
 
 ## Training
